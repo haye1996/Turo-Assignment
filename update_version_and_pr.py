@@ -34,8 +34,7 @@ def git_commit_push_pr(branch_name, pr_title, pr_body):
     subprocess.run(['git', 'add', TERRAFORM_VARS_FILE], check=True)
     subprocess.run(['git', 'commit', '-m', pr_title], check=True)
     subprocess.run(['git', 'push', '-u', 'origin', branch_name], check=True)
-    subprocess.run(['gh', 'pr', 'create', '--title', pr_title, '--body', pr_body], check=True)
-
+    subprocess.run(['gh', 'pr', 'create', '--title', pr_title, '--body', pr_body, '--merge-method', 'squash'], check=True)
 
 def main():
     if len(sys.argv) != 2:
