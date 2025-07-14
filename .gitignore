@@ -1,0 +1,31 @@
+# Kubernetes sensitive files
+k8s-token-devops-interview
+kubeconfig-devops-interview
+*.kubeconfig
+*.token
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+
+# Version files
+.version 

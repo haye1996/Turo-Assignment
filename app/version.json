@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "build": "2024-01-01T00:00:00Z",
+  "commit": "initial-commit",
+  "environment": "development",
+  "application": "devops-interview-app",
+  "description": "Simple web server for DevOps interview assignment"
+} 
