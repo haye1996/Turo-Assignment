@@ -45,6 +45,9 @@ The application is containerized with Docker, deployed to Kubernetes using Terra
 
 ### 1. Setup Kubernetes Access
 ```bash
+# Set the kubeconfig for this assignment
+export KUBECONFIG="$(pwd)/kubeconfig-devops-interview"
+
 # Set up cluster access and create namespace
 ./scripts/setup-k8s.sh
 ```
@@ -174,6 +177,9 @@ curl http://localhost:8080/index.html
 
 ### Kubernetes Testing
 ```bash
+# Set kubeconfig for kubectl commands
+export KUBECONFIG="$(pwd)/kubeconfig-devops-interview"
+
 # Check deployment status
 kubectl get pods -n hye
 kubectl get svc -n hye
@@ -198,6 +204,7 @@ curl http://<external-hostname>/version.json
 2. **Terraform apply fails**: Check cluster access with `kubectl cluster-info`
 3. **PR creation fails**: Verify GitHub CLI authentication with `gh auth status`
 4. **External IP empty**: Wait a few minutes for LoadBalancer provisioning
+5. **Wrong cluster connection**: Ensure KUBECONFIG is set correctly with `export KUBECONFIG="$(pwd)/kubeconfig-devops-interview"`
 
 ### Useful Commands
 ```bash

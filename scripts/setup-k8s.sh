@@ -9,4 +9,7 @@ echo "Using kubeconfig: $KUBECONFIG"
 kubectl create namespace hye || echo "Namespace 'hye' may already exist."
 
 # List all namespaces
-kubectl get namespaces 
+kubectl get namespaces
+
+echo ""
+echo "Kubernetes setup complete!" 
