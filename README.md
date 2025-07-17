@@ -2,6 +2,40 @@
 
 This project demonstrates a complete CI/CD pipeline for deploying a simple web application to Kubernetes using Docker, Terraform, and automated PR creation.
 
+## Enhancements
+### Enhancements 1
+https://github.com/haye1996/Turo-Assignment/blob/master/terraform/modules/app/main.tf#L47-L62
+
+app1_service_external_hostname = "ac44116b2bfb44b57ad6d7a6e1243091-347849308.us-east-1.elb.amazonaws.com"
+
+app2_service_external_hostname = "ae4d531708d4b492faa4273228b9c8cc-1548756082.us-east-1.elb.amazonaws.com"
+
+### Enhancements 2
+
+https://github.com/haye1996/Turo-Assignment/pull/4
+
+http://ac44116b2bfb44b57ad6d7a6e1243091-347849308.us-east-1.elb.amazonaws.com/page1.html
+
+### Enhancements 3
+
+DID NOT DO
+
+### Enhancements 4
+
+https://github.com/haye1996/Turo-Assignment/commit/cafdcc547887b71f9d900d40d818f90b16f66099
+
+http://ac44116b2bfb44b57ad6d7a6e1243091-347849308.us-east-1.elb.amazonaws.com/config.html
+
+### Enhancements 5
+
+DID NOT DO
+
+### Enhancements 6
+
+https://github.com/haye1996/Turo-Assignment/tree/master/terraform/modules/app
+
+https://github.com/haye1996/Turo-Assignment/blob/master/terraform/main.tf
+
 ## 🏗️ Project Overview
 
 A basic web server application that serves three static files:
