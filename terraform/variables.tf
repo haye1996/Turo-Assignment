@@ -19,7 +19,7 @@ variable "image" {
 variable "image1" {
   description = "The docker image to deploy for app1"
   type        = string
-  default     = "haitongyedocker/devops-interview-app:20250714-164504"
+  default     = "haitongyedocker/devops-interview-app:20250718-141631"
 }
 
 variable "image2" {
